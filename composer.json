@@ -1,6 +1,6 @@
 {
-    "name": "scandipwa/persisted-query",
-    "description": "ScandiPWA persisted query module",
+    "name": "lebonvin/persisted-query-extended",
+    "description": "Updated ScandiPWA persisted query module with fixes.",
     "type": "magento2-module",
     "license": [
         "OSL-3.0"
@@ -13,8 +13,8 @@
         "magento/module-graph-ql": "^100.3",
         "colinmollenhour/credis": "^1.10"
     },
-    "suggest": {
-        "magento/module-catalog": "To invalidate persisted_query cache after full reindex"
+    "replace": {
+        "scandipwa/persisted-query": "3.1.1"
     },
     "autoload": {
         "files": [
@@ -22,6 +22,17 @@
         ],
         "psr-4": {
             "ScandiPWA\\PersistedQuery\\": "src"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "magento/composer-dependency-version-audit-plugin": false
         }
     }
 }
