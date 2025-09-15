@@ -1,3 +1,15 @@
+# Forked Persisted Query
+Since the original has not been updated in 2 years (at the time of writing) and 
+there is a pull request we require to be implemented for security purposes, the 
+only option was to fork the package.
+
+Aside from this specific change (adding password for Redis) no future fixes or 
+development can be guaranteed.
+
+Original readme is below.
+
+---
+
 # ScandiPWA persisted query
 
 The main goal of persisted query approach is to reduce the amount of data transfered from the client to the server within a POST body containing GraphQl Document.
